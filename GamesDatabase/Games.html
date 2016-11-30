@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <title>Games DataBase</title>
+    <link rel="stylesheet" href="games.css">
+  </head>
+  <body>
+  <div>
+  	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+    <h1 align = "center">Games DataBase</h1>
+    <h3 align = "center">Always know what games you have!</h3>
+    <div id = 'displayArea'>
+    	<h2> - Game List - </h2>
+    	<table id = 'displayTable'>
+    		<tr>
+    			<th>Title</th>
+    			<th>Console</th>
+    			<th>Rating</th>
+    			<th></th>
+    		</tr>
+    		<template id ='rowTemplate'>
+        		<tr class = 'tableRow'>
+        			<td class = 'titleRow'></td>
+        			<td class = 'consoleRow'></td>
+        			<td class = 'ratingRow'></td>
+        			<td>
+            			<button class = 'editBtn'> Edit </button>
+            			<button class = 'delBtn'> Delete </button>
+        			</td>
+        		</tr>
+    		</template>
+    	</table>
+     	<button id="loadBtn" >Load</button>
+    </div>
+    <div id = 'inputArea'>
+    	<h2> - Input a game - </h2>
+	    <div class = 'in'>
+	        <label id = "titleText">Title:</label>
+	        <input type="text" id = "titleField">
+	    </div>
+	    <div class = 'in'>
+	        <label id = "genreText">Genre:</label>
+	        <input type="text" id = "genreField">
+	    </div>
+	    <div class = 'in'>
+	        <label id = "consoleText">Console:</label>
+	        <input type="text" id = "consoleField">
+	    </div>
+	    <div class = 'in'>
+	        <label id = "ratingText">Rating:</label>
+	        <input type="text" id = "ratingField">
+	    </div>
+	    <div class = 'in'>
+	        <label id = "multiplayerText">Multiplayer:</label>
+	        <input type="text" id = "multiplayerField">
+	    </div>
+	    <div class = 'in'>
+	        <label id = "onlineText">Online:</label>
+	        <input type="text" id = "onlineField"> 
+	    </div>
+	    <button id="clrBtn">Clear!</button>
+	    <button id="storeBtn">Store!</button>
+        <button id="updateBtn">Update</button>
+    </div>
+<!--     <div style="text-align:center;">
+        <ul id= "historybox">
+        </ul>
+    <!--- <button id="clrBtn">Delete Thought Bank</button> -->
+    </div>
+    </div>
+    <script src="games.js"></script>
+  </body>
+</html>
